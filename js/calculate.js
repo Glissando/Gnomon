@@ -36,11 +36,11 @@ function visualize()
                 let aSign = Math.sign(a)
 
                 if (aSign !== Math.sign(b) && aSign !== Math.sign(coefficients[2]) && coefficients[2] === 1 
-                && Math.abs(b) < Math.abs(a / 2))
+                && Math.sqrt(Math.abs(b)) < Math.abs(a / 2))
                 {
                     setValid()
                     a = Math.abs(a)
-                    b = Math.abs(b)
+                    b = Math.sqrt(Math.abs(b))
                     drawGnomon(a, b)
                 }
                 else
@@ -68,11 +68,11 @@ function visualize()
                 let aSign = Math.sign(a)
 
                 if (aSign !== Math.sign(b) && aSign !== Math.sign(coefficients[2]) && coefficients[2] === 1 
-                && Math.abs(b) < Math.abs(a / 2))
+                && Math.sqrt(Math.abs(b)) < Math.abs(a / 2))
                 {
                     setValid()
                     a = Math.abs(a)
-                    b = Math.abs(b)
+                    b = Math.sqrt(Math.abs(b))
                     drawGnomon(a, b)
                 }
                 else 
